@@ -12,6 +12,14 @@ def increment():
 def decrement():
     return jsonify(value=counter.decrement())
 
+@app.route('/api/increment_by_5', methods=['GET'])
+def increment_by_5():
+    return jsonify(value=counter.increment_by(5))
+
+@app.route('/api/decrement_by_5', methods=['GET'])
+def decrement_by_5():
+    return jsonify(value=counter.decrement_by(5))
+
 @app.route('/api/reset', methods=['GET'])
 def reset():
     return jsonify(value=counter.reset())
