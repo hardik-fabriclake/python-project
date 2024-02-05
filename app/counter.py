@@ -11,6 +11,15 @@ class Counter:
             self.value -= 1
         return self.value
 
+    def increment_by_five(self):
+        self.value += 5
+        return self.value
+
+    def decrement_by_five(self):
+        if self.value >= 5:
+            self.value -= 5
+        return self.value
+
     def reset(self):
         self.value = 0
         return self.value
