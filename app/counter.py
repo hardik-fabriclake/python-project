@@ -3,12 +3,12 @@ class Counter:
         self.value = 0
 
     def increment(self):
-        self.value += 1
+        self.value += 5
         return self.value
 
     def decrement(self):
-        if self.value > 0:
-            self.value -= 1
+        if self.value >= 5:
+            self.value -= 5
         return self.value
 
     def reset(self):
